@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  /* viewport height */
+  min-height: 100vh;
+
+  /* background color property */
+  /* background-color: tomato; */
+  /* background: tomato; */
+
+  /* multicolor backgroung (linear-gradient) */
+  /* background: linear-gradient(#86a788, #fffdec); */
+  /* background: linear-gradient(-45deg, #86a788, #fffdec); */
+  /* background: linear-gradient(-45deg, #86a788 50%, #fffdec 50%); */
+}
+
+#main {
+  color: #fff;
+  /* background image */
+  /* background-image: url(https://static.vecteezy.com/system/resources/previews/004/968/002/non_2x/cute-abstract-modern-background-free-vector.jpg); */
+
+  /* prevent image from being repeated */
+  background-repeat: no-repeat;
+
+  /* background size */
+
+  /* background-size: contain; */
+  background-size: cover;
+
+  /* background position */
+  background-position: bottom;
+
+  /* background: ; */
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(https://static.vecteezy.com/system/resources/previews/004/968/002/non_2x/cute-abstract-modern-background-free-vector.jpg);
+
+  background-attachment: fixed;
+
+  /* offset : top | right | bottom | left */
+  /* inner space : padding */
+
+  /* all four sides */
+  padding: 64px;
+
+  /* top-bottom  | left-right */
+  /* padding: 32px 64px; */
+
+  /* top  | left-right | bottom */
+  /* padding: 32px 64px 100px; */
+
+  /* top  | right | bottom | left */
+  /* padding: 32px 64px 100px 150px; */
+
+  /* padding-top: 100px;
+  padding-right:  100px;
+  padding-bottom: 100px;
+  padding-left: 100px; */
+
+  /* margin : outer space */
+
+  /* all four sides  */
+  margin: 64px;
+
+  /* top-bottom | left-right */
+  /* margin: 32px 64px; */
+
+  /* top | left-right | bottom */
+  /* margin: 32px 64px 128px; */
+
+  /* top | right | bottom | left */
+  /* margin: 32px 64px 128px 240px; */
+
+  /* border-width: 10px;
+  border-style: double;
+  border-color: tomato; */
+
+  /* border: 15px groove teal; */
+  /* border: 15px inset teal; */
+
+  border-radius: 10px;
+  /* x , y , blur , spread , color */
+  /* box-shadow: -4px -4px 4px 0 #000; */
+  box-shadow: 0 0 10px 0 #000;
+}
+
+#main h1 {
+  /* set text color */
+  color: steelblue;
+  /* set text size */
+  font-size: 40px;
+  /* set text style (font family) */
+  font-family: Poppins;
+  /* set text boldness */
+  font-weight: 500;
+  /* letter spacing */
+  letter-spacing: 2px;
+  /* text shadow : x , y , blur , color */
+  text-shadow: -2px 2px 2px black;
+  /* font style */
+  /* font-style: italic; */
+}
+
+#main p {
+  /* set text alignment */
+  text-align: justify;
+  /* line height */
+  line-height: 1.5;
+}

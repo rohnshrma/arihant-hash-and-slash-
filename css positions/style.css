@@ -1,0 +1,29 @@
+.box {
+  height: 100px;
+  width: 100px;
+  border: 2px solid blueviolet;
+}
+
+.b1 {
+  background-color: tan;
+}
+.b2 {
+  /* position relative */
+
+  /* position: relative; */
+  /* left -> right */
+  /* left: 50px; */
+  /* top -> bottom */
+  /* top: 100px; */
+
+  position: fixed;
+  bottom: 0;
+  right: 0;
+
+  background-color: teal;
+}
+.b3 {
+  /* position: relative; */
+  /* z-index: 2; */
+  background-color: thistle;
+}

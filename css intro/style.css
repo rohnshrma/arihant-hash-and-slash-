@@ -1,0 +1,21 @@
+p {
+  color: #333;
+}
+
+#main {
+  /* property => key : value ; */
+  color: white;
+  /* property => key : value ; */
+  background-color: tomato;
+  /* property => key : value ; */
+  border: 2px solid black;
+  /* property => key : value ; */
+  padding: 2rem 4rem;
+}
+
+#another-section {
+  color: white;
+  background-color: teal;
+  border: 2px solid black;
+  padding: 2rem 4rem;
+}
