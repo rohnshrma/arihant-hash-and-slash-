@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model and Positions Assignment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            padding: 0;
+            color: #333;
+        }
+
+        h1,
+        h2 {
+            color: #444;
+        }
+
+        .task {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        .example {
+            border: 1px dashed #aaa;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Practical Assignment: Box Model and Positions</h1>
+    <p><strong>Objective:</strong> Understand and practice the CSS box model, including <code>padding</code>,
+        <code>margin</code>, <code>border</code>, and positions (<code>fixed</code> and <code>relative</code>).</p>
+
+    <h2>Tasks</h2>
+
+    <div class="task">
+        <h3>Task 1: Basic Box Model Styling</h3>
+        <p>Create a <code>div</code> element with a class name <code>box1</code>.</p>
+        <ul>
+            <li>Style it with:
+                <ul>
+                    <li>Width: <code>200px</code></li>
+                    <li>Height: <code>200px</code></li>
+                    <li>Background color: <code>lightblue</code></li>
+                    <li>Padding: <code>10px</code></li>
+                    <li>Margin: <code>20px</code></li>
+                    <li>Border: <code>5px solid black</code></li>
+                </ul>
+            </li>
+            <li>Write a description below the box explaining how the box model affects the total size.</li>
+        </ul>
+        <div class="example">
+            Example HTML:
+            <pre>
+&lt;div class="box1"&gt;This is box1&lt;/div&gt;
+            </pre>
+        </div>
+    </div>
+
+    <div class="task">
+        <h3>Task 2: Nested Box Model</h3>
+        <p>Create a <code>div</code> container with a class name <code>container</code>, and inside it, add two child
+            <code>div</code> elements (<code>child1</code> and <code>child2</code>).</p>
+        <ul>
+            <li>Style the container:
+                <ul>
+                    <li>Width: <code>300px</code></li>
+                    <li>Border: <code>2px solid darkblue</code></li>
+                    <li>Padding: <code>20px</code></li>
+                </ul>
+            </li>
+            <li>Style the children:
+                <ul>
+                    <li>Width: <code>50%</code> of the container</li>
+                    <li>Padding: <code>10px</code></li>
+                    <li>Margin: <code>5px</code></li>
+                    <li>Border: <code>3px dashed green</code></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="task">
+        <h3>Task 3: Position - Fixed</h3>
+        <p>Create a <code>div</code> with the class name <code>fixedBox</code>.</p>
+        <ul>
+            <li>Style it with:
+                <ul>
+                    <li>Width: <code>150px</code></li>
+                    <li>Height: <code>150px</code></li>
+                    <li>Background color: <code>lightcoral</code></li>
+                    <li>Position: <code>fixed</code></li>
+                    <li>Place it at the top-right corner of the viewport.</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="task">
+        <h3>Task 4: Position - Relative</h3>
+        <p>Create a <code>div</code> with the class name <code>relativeBox</code>.</p>
+        <ul>
+            <li>Style it with:
+                <ul>
+                    <li>Width: <code>200px</code></li>
+                    <li>Height: <code>100px</code></li>
+                    <li>Background color: <code>lightgreen</code></li>
+                    <li>Position: <code>relative</code></li>
+                    <li>Shift it <code>30px</code> to the right and <code>20px</code> down from its original position.
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="task">
+        <h3>Task 5: Combined Example</h3>
+        <p>Create a webpage layout with:</p>
+        <ul>
+            <li>A <code>header</code> fixed at the top of the viewport (<code>position: fixed</code>).</li>
+            <li>A content area with three sections, each styled with the box model (different padding, margin, and
+                border for each section).</li>
+            <li>A footer with <code>position: relative</code>, placed at the bottom of the page but slightly offset from
+                its normal flow using <code>top</code>.</li>
+        </ul>
+    </div>
+
+    <div class="task">
+        <h3>Bonus Task</h3>
+        <p>Add hover effects:</p>
+        <ul>
+            <li>When the user hovers over any <code>div</code>, increase its <code>border-width</code> and change the
+                <code>background-color</code> to a contrasting color.</li>
+        </ul>
+    </div>
+
+    <h2>Submission Requirements</h2>
+    <ul>
+        <li>Save the HTML and CSS in separate files (<code>index.html</code> and <code>style.css</code>).</li>
+        <li>Ensure proper comments in the CSS to explain the styles applied.</li>
+        <li>The page must be visually appealing and responsive.</li>
+    </ul>
+
+    <p><strong>Expected Time to Complete:</strong> 2–3 hours.</p>
+</body>
+
+</html>

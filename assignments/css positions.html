@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positioning Practice</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            border: 1px solid #ddd;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .content {
+            height: 500px;
+            /* To create scrollable content */
+            overflow-y: auto;
+        }
+
+        /* Task 1: Fixed Position */
+        .fixed-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            z-index: 1000;
+            /* Ensures it stays above other content */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .placeholder {
+            height: 60px;
+            /* Matches the height of the fixed header to avoid overlapping */
+        }
+
+        /* Task 2: Absolute Position */
+        .relative-container {
+            position: relative;
+            height: 300px;
+            border: 2px dashed #888;
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        .absolute-box {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            width: 150px;
+            height: 100px;
+            background-color: #4CAF50;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+
+        /* Task 3: Sticky Position */
+        .sticky-header {
+            position: sticky;
+            top: 0;
+            background-color: #FF5722;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            z-index: 999;
+        }
+
+        .sticky-content {
+            padding: 10px;
+            margin-top: 10px;
+            height: 500px;
+            /* To make scrolling within this section */
+            overflow-y: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Task 1: Fixed Position -->
+    <header class="fixed-header">
+        Task 1: Fixed Header - This header stays fixed at the top!
+    </header>
+    <div class="placeholder"></div> <!-- Prevent content from being overlapped -->
+    <section>
+        <h2>Task 1: Fixed Position</h2>
+        <p>
+            Create a header that stays fixed at the top of the screen even when you scroll down.
+            Ensure that the content below does not overlap the fixed header by adding a placeholder
+            with the same height as the header.
+        </p>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vulputate, sapien a aliquam tincidunt, arcu
+                nulla tincidunt ligula, eget gravida libero tortor vel ex.</p>
+            <p>Scroll down to observe how the fixed header remains visible at the top of the page.</p>
+        </div>
+    </section>
+
+    <!-- Task 2: Absolute Position -->
+    <section>
+        <h2>Task 2: Absolute Position</h2>
+        <p>
+            Create a box inside a container that is positioned 50px from the top and left.
+            The container should have a dashed border and use <strong>position: relative</strong>.
+            The box should use <strong>position: absolute</strong>, and its position will be
+            calculated relative to the container.
+        </p>
+        <div class="relative-container">
+            <div class="absolute-box">
+                Absolutely Positioned!
+            </div>
+        </div>
+    </section>
+
+    <!-- Task 3: Sticky Position -->
+    <section>
+        <h2>Task 3: Sticky Position</h2>
+        <p>
+            Create a sticky header within this section. This header should stick to the top of
+            the viewport as you scroll within this section. Use <strong>position: sticky</strong>
+            with <strong>top: 0</strong> to achieve this.
+        </p>
+        <div class="sticky-header">
+            Task 3: Sticky Header - Sticks when scrolling!
+        </div>
+        <div class="sticky-content">
+            <p>Scroll down within this section to observe the sticky behavior.</p>
+            <p>The sticky header will remain visible at the top of the viewport until you scroll past the section.</p>
+        </div>
+    </section>
+
+</body>
+
+</html>
