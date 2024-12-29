@@ -1,108 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sacramento&display=swap");
+/* Imports two custom fonts (Montserrat and Sacramento) from Google Fonts for use in the stylesheet. */
+
 * {
   margin: 0;
   padding: 0;
 }
+/* Resets the default margin and padding for all HTML elements to ensure consistency across browsers. */
+
+p {
+  font-family: sans-serif;
+  letter-spacing: 2px;
+}
+/* Sets the font of all <p> (paragraph) elements to a default sans-serif and adds 2px spacing between letters for readability. */
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Montserrat, sans-serif;
+}
+/* Applies the Montserrat font (or a fallback sans-serif) to all header elements from <h2> to <h6>. */
 
 #main {
-  /* x , y, blur, spread , color */
-  /* box-shadow: -4px 4px 10px 0 black; */
-  box-shadow: 0 0 10px black;
-
-  /* make edges round */
-  border-radius: 14px;
-
-  /* t,r,b,l */
+  box-shadow: 0 0 4px black;
+  border-radius: 10px;
   margin: 64px;
-
-  /* t-b , l-r  */
-  /* margin: 24px 48px; */
-
-  /* t , l-r , b */
-  /* margin: 24px 48px 12px; */
-
-  /* t , l , b , r */
-
-  /* margin: 12px 23px 34px 45px; */
-
-  /* t,r,b,l */
   padding: 64px;
-
-  /* t-b , l-r */
-  /* padding: 64px 128px; */
-
-  /* t , l-r , b */
-  /* padding: 64px 128px 365px; */
-
-  /*  t, r, b, l */
-  /* padding: 12px 23px 34px 45px; */
-  /* 
-  padding-top: 12px;
-  padding-right: 12px;
-  padding-bottom: 12px;
-  padding-left: 12px; */
-
-  /* border-width: 10px;
-  border-style: inset;
-  border-color: teal; */
-
-  /* border: 10px inset salmon; */
-
-  /* border-top: 10px solid salmon;
-  border-left: 10px solid salmon;
-  border-right: 10px solid salmon;
-  border-bottom: 10px solid salmon; */
-
-  /* background-color: #f3dfa2; */
-  /* background: #f3dfa2; */
-
-  /* background: linear-gradient(#e84855, #efe9ae); */
-  /* background: linear-gradient(-45deg, #e84855, #efe9ae); */
-  /* background: linear-gradient(45deg, #d1c6ad 50%, #797596 50%); */
-
-  /* background: url(); */
-  /* background-image: url(https://img.freepik.com/free-vector/coloured-summer-background_1048-2276.jpg?t=st=1735370669~exp=1735374269~hmac=6597f0f0b5717ac0e6c81e0218b07bca59d4f2061c47f16a5020d40d98966e49&w=1060); */
-
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(https://img.freepik.com/free-vector/sunshine-background-poster_1284-9444.jpg?uid=R28473901&ga=GA1.1.651523283.1718004312&semt=ais_hybrid);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  text-align: center;
+  background: #ccdbdc;
 }
-
-/* # is id selector , followed by id name e.g. #main */
+/* Styles the element with ID "main" to:
+   - Add a shadow around it (0px horizontal, 0px vertical, 4px blur, black color).
+   - Round the corners with a 10px radius.
+   - Add 64px of space around it (margin) and inside it (padding).
+   - Center-align the text inside.
+   - Set a light greenish-blue background color (#ccdbdc). */
 
 #main h1 {
-  /* text shadow  : x , y , blur , color*/
-  /* text-shadow: 0 0 4px red; */
-
-  text-shadow: -2px 2px 0 #000;
-
-  /* text size */
+  text-shadow: -2px 2px 2px #fff;
+  margin-top: 32px;
+  font-family: Sacramento, Montserrat;
   font-size: 64px;
-  /* text boldness */
-  font-weight: 500;
-  /* text font family */
-  font-family: sans-serif;
-  /* letter spacing */
-  letter-spacing: 6px;
-  /* text color */
-  color: cadetblue;
-  /* text decoration  : line-type ,style (o) ,color (o)*/
-  text-decoration: underline dashed red;
+  font-style: italic;
+  line-height: 1;
 }
+/* Styles the <h1> inside the #main element to:
+   - Add a shadow to the text (slightly offset with -2px horizontal and 2px vertical, 2px blur, white color).
+   - Add a 32px margin at the top.
+   - Use the Sacramento font first, with Montserrat as a fallback.
+   - Set the font size to 64px for emphasis.
+   - Italicize the text.
+   - Adjust the line height to be exactly equal to the font size for compact spacing. */
+
 #main h2 {
-  font-family: sans-serif;
   font-size: 32px;
-  text-shadow: -1px 1px 0 #000;
-  color: cadetblue;
+  font-weight: 500;
+  margin-bottom: 24px;
 }
+/* Styles the <h2> inside the #main element to:
+   - Set the font size to 32px.
+   - Use a medium font weight (500).
+   - Add a 24px margin at the bottom for spacing from other elements. */
 
-#main p {
-  color: #fff;
-
-  /* text alignment */
-  text-align: justify;
-  /* line spacing */
-  line-height: 2;
-  font-family: sans-serif;
+#main img {
+  width: 200px;
+  box-shadow: 0 0 4px black;
+  border-radius: 50%;
 }
+/* Styles all <img> tags inside the #main element to:
+   - Set a fixed width of 200px.
+   - Add a shadow (0px horizontal, 0px vertical, 4px blur, black color).
+   - Make the image circular by setting the border-radius to 50%. */
