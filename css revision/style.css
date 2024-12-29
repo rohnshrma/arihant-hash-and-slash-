@@ -46,12 +46,12 @@ h6 {
   line-height: 1;
 }
 /* Styles the <h1> inside the #main element to:
-   - Add a shadow to the text (slightly offset with -2px horizontal and 2px vertical, 2px blur, white color).
-   - Add a 32px margin at the top.
-   - Use the Sacramento font first, with Montserrat as a fallback.
-   - Set the font size to 64px for emphasis.
-   - Italicize the text.
-   - Adjust the line height to be exactly equal to the font size for compact spacing. */
+- Add a shadow to the text (slightly offset with -2px horizontal and 2px vertical, 2px blur, white color).
+- Add a 32px margin at the top.
+- Use the Sacramento font first, with Montserrat as a fallback.
+- Set the font size to 64px for emphasis.
+- Italicize the text.
+- Adjust the line height to be exactly equal to the font size for compact spacing. */
 
 #main h2 {
   font-size: 32px;
@@ -59,9 +59,9 @@ h6 {
   margin-bottom: 24px;
 }
 /* Styles the <h2> inside the #main element to:
-   - Set the font size to 32px.
-   - Use a medium font weight (500).
-   - Add a 24px margin at the bottom for spacing from other elements. */
+- Set the font size to 32px.
+- Use a medium font weight (500).
+- Add a 24px margin at the bottom for spacing from other elements. */
 
 #main img {
   width: 200px;
@@ -69,6 +69,83 @@ h6 {
   border-radius: 50%;
 }
 /* Styles all <img> tags inside the #main element to:
-   - Set a fixed width of 200px.
-   - Add a shadow (0px horizontal, 0px vertical, 4px blur, black color).
-   - Make the image circular by setting the border-radius to 50%. */
+- Set a fixed width of 200px.
+- Add a shadow (0px horizontal, 0px vertical, 4px blur, black color).
+- Make the image circular by setting the border-radius to 50%. */
+
+#contact {
+  box-shadow: 0 0 4px black;
+  /* Adds a shadow around the #contact element (0px horizontal, 0px vertical, 4px blur, black color). */
+
+  border-radius: 10px;
+  /* Rounds the corners of the #contact element by 10px. */
+
+  margin: 64px;
+  /* Adds 64px of space outside the #contact element on all sides. */
+
+  padding: 64px;
+  /* Adds 64px of space inside the #contact element, between the content and its edges. */
+
+  text-align: center;
+  /* Centers the text inside the #contact element horizontally. */
+
+  background: #ccdbdc;
+  /* Sets a light greenish-blue background color (#ccdbdc) for the #contact element. */
+}
+
+#contact h2 {
+  font-size: 48px;
+  /* Sets the font size of <h2> elements inside #contact to 48px. */
+
+  font-weight: 600;
+  /* Sets the font weight to 600, making the text slightly bold. */
+
+  text-shadow: -2px 2px 2px #fff;
+  /* Adds a shadow to the text (-2px horizontal offset, 2px vertical offset, 2px blur, white color). */
+
+  margin-bottom: 16px;
+  /* Adds a 16px space below the <h2> elements to separate them from other elements. */
+}
+
+#contact h3 {
+  font-size: 32px;
+  /* Sets the font size of <h3> elements inside #contact to 32px. */
+
+  font-weight: 400;
+  /* Sets the font weight to 400, making the text normal (not bold). */
+
+  margin-bottom: 16px;
+  /* Adds a 16px space below the <h3> elements to separate them from other elements. */
+}
+
+#contact button {
+  box-shadow: -2px 2px 0 #fff;
+  /* Adds a shadow to the button with a slight offset (-2px horizontal, 2px vertical) and no blur (0px). The shadow color is white. */
+
+  margin-top: 16px;
+  /* Adds 16px of space above the button to separate it from elements above. */
+
+  padding: 12px 20px;
+  /* Adds 12px of vertical padding and 20px of horizontal padding inside the button. */
+
+  background-color: #618985;
+  /* Sets the background color of the button to a greenish-gray color (#618985). */
+
+  color: #fff;
+  /* Sets the text color of the button to white (#fff). */
+
+  border-color: transparent;
+  /* Removes any visible border color by setting it to transparent. */
+
+  border-radius: 40px;
+  /* Rounds the button's corners into a pill shape by setting a high border radius (40px). */
+
+  font-family: Montserrat;
+  /* Sets the font of the button text to Montserrat. */
+
+  font-weight: 400;
+  /* Sets the font weight of the button text to normal (400). */
+
+  font-size: 16px;
+  /* Sets the font size of the button text to 16px. */
+}
