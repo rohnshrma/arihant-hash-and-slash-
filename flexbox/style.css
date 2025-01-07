@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#main {
+  padding: 32px;
+  background-color: rgb(218, 218, 218);
+  display: flex;
+  align-items: center;
+}
+
+.content-bx {
+  width: 50%;
+}
+.content-bx h1 {
+  /* 1rem = 16px */
+  font-size: 4rem;
+}
+.content-bx h2 {
+  /* 1rem = 16px */
+  font-size: 3rem;
+}
+.content-bx button {
+  padding: 10px 12px;
+  border-color: transparent;
+  border-radius: 4px;
+  background-color: #333;
+  color: #fff;
+  font-family: sans-serif;
+  margin-top: 1rem;
+}
+.image-bx {
+  text-align: center;
+  width: 50%;
+}
+.image-bx img {
+  filter: drop-shadow(-4px 4px 2px black);
+  width: 50%;
+}
